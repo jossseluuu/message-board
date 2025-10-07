@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Message Board</title>
+</head>
+<body>
+    <h1>Posts</h1>
+    {% for post in object_list %}
+        <p>{{ post.text }}</p>
+    {% empty %}
+        <p>No posts yet.</p>
+    {% endfor %}
+</body>
+</html>
